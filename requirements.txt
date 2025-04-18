@@ -1,0 +1,28 @@
+# Core LangChain/LangGraph
+ langchain
+  langgraph 
+  langchain[groq]
+ langchain-community # For various tools/loaders
+  # FastAPI & Web Server
+   fastapi 
+   uvicorn[standard] 
+   # Data Validation & Settings 
+   pydantic[email]
+    python-dotenv
+     pydantic-settings 
+     # Database (for generated app & potentially generator tools) 
+     sqlalchemy
+      psycopg2-binary # For PostgreSQL connection 
+      alembic # For database migrations 
+      # SRS Parsing & Testing
+       python-docx # For reading .docx files 
+       pytest # For running tests generated/validated 
+       httpx # For FastAPI TestClient 
+       # Code Quality (for validation step) 
+       ruff # Linter & potential formatter 
+       black # Formatter (optional if using Ruff for formatting) 
+       # Optional: Vision models (check specific provider SDKs) 
+       # groq # Optional: Visualization
+     graphviz 
+      pygraphviz # Needs graphviz system library installed 
+     mermaid-python # Alternative for mermaid diagrams  
